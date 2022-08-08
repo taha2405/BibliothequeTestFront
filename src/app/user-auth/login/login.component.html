@@ -1,0 +1,34 @@
+<div class="card-body">
+    <form >
+      <div class="input-group form-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fas fa-user"></i></span>
+        </div>
+        <label for="username"></label>
+        <input required minlength="4" type="text" class="form-control" id="username" formControlName="username" placeholder="Nom d'utilisateur"
+              >
+      </div>
+
+    
+      <div class="input-group form-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fas fa-key"></i></span>
+        </div>
+        <label for="password"></label>
+        <input type="password" id="password" class="form-control" placeholder="Mot de passe"
+               name="password" formControlName="password">
+      </div>
+      
+      <div class="row align-items-center remember">
+        <label for="rememberMe"></label>
+        <input type="checkbox" id="rememberMe">Se souvenir de moi
+      </div>
+      <br>
+      <br>
+      <div class="alert alert-danger"  role="alert">
+        Vérifier votre nom d'utilisateur ou mot de passe
+      </div>
+
+          <input type="submit" value="Connexion " class="btn float-right login_btn">
+    </form>
+  </div>
